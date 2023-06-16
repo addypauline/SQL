@@ -1,0 +1,18 @@
+--Create a Clothing Store Database
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Description TEXT);
+
+INSERT INTO clothing VALUES (1, "Spring Dresses", 18, "Floral dresses");
+INSERT INTO clothing VALUES (2, "Blue Jeans", 20, "Blue Skinny Jeans");
+INSERT INTO clothing VALUES (3, "Swim suits", 25, "Swim suit sets");
+INSERT INTO clothing VALUES (4, "T-Shirts", 15, "Casual T-shirts");
+INSERT INTO clothing VALUES (5, "Jumpsuits", 25, "Formal Jumpsuits");
+
+SELECT * FROM clothing;
+
+--display database ordered by price. 
+SELECT * FROM clothing
+ORDER BY price asc;
+
+--What is the average price of the items
+SELECT AVG (price) "average clothing price" FROM clothing
